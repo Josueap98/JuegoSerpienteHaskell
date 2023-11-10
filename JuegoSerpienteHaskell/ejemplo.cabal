@@ -1,0 +1,51 @@
+cabal-version:      2.4
+name:               ejemplo
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+
+-- The package author(s).
+-- author:
+
+-- An email address to which users can send suggestions, bug reports, and patches.
+-- maintainer:
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files: CHANGELOG.md
+
+executable app
+  Main-is:        Main.hs
+  hs-source-dirs: app
+  
+  other-modules:
+  	Snake
+  	
+  Build-depends:
+          base                          >= 4.8 && < 5
+        , containers
+        , bytestring                    >= 0.10 && < 0.12
+        , bmp                           == 1.2.*
+        , gloss                         == 1.13.*
+        , random			>= 1.1
+        
+
+  Default-Language:
+        Haskell2010
+
+  ghc-options:
+        -O2
+        -Wall
+        -threaded
+        -rtsopts
