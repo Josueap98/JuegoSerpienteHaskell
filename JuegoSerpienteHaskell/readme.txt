@@ -11,3 +11,5 @@ correr el comando cabal install gloss
 si error de .cabal instalar sudo apt-get install freeglut3 freeglut3-dev
 regresar a carpeta ejemplo y correr cabal install --lib gloss
 hacer cabal run
+
+Crea tu propia cabal init para obtener las carpetas de dist-newstyle
